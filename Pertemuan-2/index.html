@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertemuan-1</title>
+    <style>
+      main h2 {
+        text-decoration: underline;
+      }
+      main p {
+        text-align: center;
+      }
+      #para1 {
+        font-style: italic;
+        font-weight: bold;
+        color: darkgreen;
+      }
+      p.description {
+        font-size: 1.2em;
+        color: darkgray;
+      }
+      article h3 {
+        font-weight: bold;
+      }
+      section h4 {
+        color: darkred;
+      }
+      div p {
+        background-color: antiquewhite;
+      }
+      .para2:hover {
+        font-size: 1.5em;
+        color: red;
+      }
+      p::first-line {
+        color: #ff0000;
+        font-variant: small-caps;
+      }
+      a[target] {
+        background-color: yellow;
+      }
+      a[target="_blank"] {
+        background-color: purple;
+      }
+      #card {
+        border: 2px solid blue;
+        margin: 50px;
+      }
+      #card > h1 {
+        color: tomato;
+      }
+      #card > p {
+        background-color: pink;
+      }
+      p {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+      }
+      h1 {
+        margin: 25px 50px 75px 100px;
+      }
+      div {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+      }
+      .card {
+        padding: 25px 50px 75px 100px;
+      }
+      div {
+        height: 200px;
+        width: 50%;
+        background-color: powderblue;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header style="background-color: lightblue">
+      <h1 style="color: darkblue">Belajar HTML</h1>
+      <p style="font-style: italic">Belajar HTML Dasar</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#" style="color: green">Home</a></li>
+        <li><a href="#" style="color: red">About</a></li>
+        <li><a href="#" style="color: blueviolet">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Heading 2</h2>
+      <p>Every paragraph will be affected by the style.</p>
+      <p id="para1">Me Too!</p>
+      <p class="description">And Me!</p>
+    </main>
+    <article>
+      <h3>Article 1</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel orci
+        et erat iaculis placerat. Sed vel mi id diam semper interdum vel vel
+        velit. Nulla facilisi. Donec vel dolor at velit consectetur bibendum.
+        Donec sed consectetur velit, id condimentum justo.
+      </p>
+    </article>
+    <section>
+      <h4>Section 1</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel orci
+        et erat iaculis placerat. Sed vel mi id diam semper interdum vel vel
+        velit. Nulla facilisi. Donec vel dolor at velit consectetur bibendum.
+        Donec sed consectetur velit, id condimentum justo.
+      </p>
+    </section>
+    <aside>
+      <h4>Aside 1</h4>
+      <p style="border: 2px dotted #1e90ff">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel orci
+        et erat iaculis placerat. Sed vel mi id diam semper interdum vel vel
+        velit. Nulla facilisi. Donec vel dolor at velit consectetur bibendum.
+        Donec sed consectetur velit, id condimentum justo.
+      </p>
+    </aside>
+    <h1>Descendant Selector</h1>
+    <!-- selector komnbinator -->
+    <div>
+      <p>Every paragraph will be affected by the style.</p>
+    </div>
+    <!-- selector pseudo-class -->
+    <div id="card">
+      <p class="para2">Every paragraph will be affected by the style.</p>
+      <p>Every paragraph will be affected by the style.</p>
+    </div>
+    <div>
+      <p>
+        You can use the ::first-line pseudo-element to add a special effect to
+        the first line of a text. Some more text. And even more, and more, and
+        more, and more, and more, and more, and more, and more, and more, and
+        more, and more, and more.
+      </p>
+    </div>
+    <div>
+      <h2>CSS [attribute="value"] Selector</h2>
+      <a href="https://www.cnnindonesia.com/">CNN Indonesia</a>
+      <a target="_self" href="https://www.detik.com/">Detik.com</a>
+      <a target="_blank" href="https://www.kompas.com/">Kompas.com</a>
+    </div>
+    <footer>
+      <p>&copy; 2021 Belajar HTML. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
